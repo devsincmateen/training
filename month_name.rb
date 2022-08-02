@@ -7,6 +7,6 @@ module MonthName
   def get_month_string(num, type)
     hash = %w[January February March April May June July
               August September October Novembber December]
-    type ? hash[num.to_i] : hash[num.to_i][0..2]
+    type ? hash[num.to_i - 1] : hash[num.to_i - 1][0..2]
   end
 end
