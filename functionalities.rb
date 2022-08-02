@@ -81,8 +81,9 @@ module Functionality
     filename = get_dir(arguments)
     filename.select! { |i| i.include?(get_month_string(arguments[1].month, false).to_s) }
     # p filename
-    return if check_files(filename)
-
+    if check_files(filename)
+      return 
+    end
     hash = extract_data("#{arguments[2]}/#{filename[0]}")
 
     max_temp = hash['Max TemperatureC']
