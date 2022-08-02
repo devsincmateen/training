@@ -11,7 +11,7 @@ module Extraction
     args << ARGV[2]
   end
 
-  def makehash(data, keys, hash)
+  def make_hash(data, keys, hash)
     data.each do |d| # extracting numeric values from each line provided
       values = d.split(',')
       pkt = values[0].split('-')
@@ -36,6 +36,6 @@ module Extraction
     keys.each do |i|
       hash[i] = []
     end
-    makehash(data, keys, hash)
+    make_hash(data, keys, hash)
   end
 end

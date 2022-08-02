@@ -6,24 +6,22 @@ require_relative 'date'
 require_relative 'extraction'
 
 # Module that has function that processes the wetherman command
-module Weatherman
-  include Extraction
-  include Functionality
+class WeatherMan
+  extend Extraction
+  extend Functionality
 
-  def weather_man
+  def self.weather_man
     arguments = extract_arg
     # p arguments
     case arguments[0]
     when 'a'
-      a_function(arguments)
+      avg_temp_humid_display(arguments)
     when 'e'
-      e_function(arguments)
+      temp_humid_display(arguments)
     when 'c'
-      c_function(arguments)
+      temp_barchart(arguments)
     end
   end
 end
-include Weatherman
-
-Weatherman.weather_man
+WeatherMan.weather_man
 # [].methods
