@@ -10,7 +10,7 @@ class WeatherMan
   extend Extraction
   extend Functionality
 
-  def self.weather_man
+  def self.execute
     arguments = extract_arg
     # p arguments
     case arguments[0]
@@ -19,9 +19,10 @@ class WeatherMan
     when 'e'
       temp_humid_display(arguments)
     when 'c'
-      temp_barchart(arguments)
+      temp_bar_chart(arguments)
+    else puts 'Invalid Case'
     end
   end
 end
-WeatherMan.weather_man
+WeatherMan.execute
 # [].methods

@@ -6,7 +6,7 @@ require_relative 'extraction'
 
 # implements all the 3 functions
 module Functionality
-  include Monthname
+  include MonthName
   include Extraction
 
   def get_dir(arguments)
@@ -15,14 +15,21 @@ module Functionality
     filename
   end
 
-  def process(filename, max_temprature, max_humid, min_temprature); end
+  def check_files(filename)
+    if filename.length.zero?
+      puts 'Invalid Directory no files found'
+      true
+    end
+    false
+  end
 
   def avg_temp_humid_display(arguments)
-    get_dir(arguments)
     max_temprature = max_humid = -999
     min_temprature = 9999
     max_day = min_day = max_humid_day = []
     filename = get_dir(arguments)
+    return if check_files(filename)
+
     filename.each do |i|
       hash = extract_data("#{arguments[2]}/#{i}")
 
@@ -49,6 +56,8 @@ module Functionality
     filename.select! { |i| i.include?(arguments[1].year) }
     filename.select! { |i| i.include?(get_month_string(arguments[1].month, false).to_s) }
     # p filename
+    return if check_files(filename)
+
     hash = extract_data("#{arguments[2]}/#{filename[0]}")
     avg_max_temp = hash['Max TemperatureC'].compact.sum / hash['Max TemperatureC'].compact.size
     avg_min_temp = hash['Min TemperatureC'].compact.sum / hash['Min TemperatureC'].compact.size
@@ -68,10 +77,12 @@ module Functionality
     end
   end
 
-  def temp_barchart(arguments)
+  def temp_bar_chart(arguments)
     filename = get_dir(arguments)
     filename.select! { |i| i.include?(get_month_string(arguments[1].month, false).to_s) }
     # p filename
+    return if check_files(filename)
+
     hash = extract_data("#{arguments[2]}/#{filename[0]}")
 
     max_temp = hash['Max TemperatureC']
