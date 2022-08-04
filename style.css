@@ -3,14 +3,18 @@
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #676666;
+    
     
   }
 
-  a, a:hover, a:focus, a:active {
+a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
-    }
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .nav-item{
     color: #676666 !important; 
@@ -18,9 +22,14 @@
     padding: 15px;
     font-weight: bold;
 }
+
+.navbar-icons .nav-item {
+    padding: 5px;
+    font-weight: bold;
+}
+
 .nav-item.active{
     color: #e99c2e !important; 
-    
 }
 body{
     background-color: #f8f9fd !important;
@@ -41,6 +50,59 @@ body{
 }
 
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #e99c2e;
+}
+
+.carousel-indicators .active {
+    background-color: #676666;
+}
+
+.slide .content{
+    float: left;
+    width: 60%;
+    padding-top: 60px;
+}
+.slide .image{
+    float: right;
+    width: 40%;
+}
+.slide .content h3{
+    color: #998d80;
+}
+.slide .content h1{
+    color: #626161;
+}
+.slide .content p{
+    color: #aaa9a7;
+}
+
+.slide .content .slider-buttons .add-to-cart-btn{
+    background-color: #e99c30;
+    padding: 15px 25px;
+    border: 0px;
+    color: white;
+}
+
+.slide .content .slider-buttons .more-info-btn{
+    margin-left: 30px;
+    border: 0px;
+    color: #e99c30;
+    font-weight: bold;
+}
 
 
 
