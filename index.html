@@ -12,11 +12,11 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="nav-container">
     <div class="header-container">
 
     <!-- Navigation -->
-        <nav class="navbar  navbar-expand-md navbar-light  sticky-top">
+        <nav class="navbar  navbar-expand-md navbar-light  ">
             <div class="logo-container " >
                 <a class="navbar-logo" href = "#"><img src = "img/logo.png"></a>
             </div>
@@ -44,19 +44,18 @@
                 </ul>
             </div>
 
-            <div class="navbar">
                 <ul class="navbar-nav navbar-icons">
-                    <li class="nav-item">
+                    <li class="nav-item-icon">
                         <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item-icon">
                     <a class="nav-link" href="#"><i class="fas fa-gear"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item-icon">
                     <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
                     </li>
                 </ul>
-            </div>
+            
 
         </nav>
 
@@ -140,29 +139,32 @@
 </div>
 
 <!--- Popular products -->
-<div class="popular-products-container">
-<div class="popular-products">
-    <div class="arm-chair">
-        <img src="img/populer-products/p1.png">
-        <h6> Arm Chair</h6>
-        <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut</p>
 
+<div class="popular-products-container">    
+    <div class="container popular-products">
+        <div class="row">
+            <div class="arm-chair col-lg-3 ">
+                <img src="img/populer-products/p1.png">
+                <h6> Arm Chair</h6>
+                <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut</p>
+    
+            </div>
+            <div class="stool-chair col-lg-5 ">
+                <img src="img/populer-products/p2.png">
+                <h6> Latest Designed Stool and Chair</h6>
+                <p>Edi Ut Perspiciatis Unde Omnis Iste Natusina Error Sit Voluptatem Accusantium Doloret Mque Laudantium, Totam Rem Aperiam</p>
+                <h6>Sales Start from <span style="color: #e99c2e">＄99.00<span></h6>
+                <button>Discover More</button>
+    
+            </div>
+            <div class="hanging-lamp col-lg-3 ">
+                <img src="img/populer-products/p3.png">
+                <h6> Hanging Lamp</h6>
+                <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut</p>
+    
+            </div>
+        </div>
     </div>
-    <div class="stool-chair">
-        <img src="img/populer-products/p2.png">
-        <h6> Latest Designed Stool and Chair</h6>
-        <p>Edi Ut Perspiciatis Unde Omnis Iste Natusina Error Sit Voluptatem Accusantium Doloret Mque Laudantium, Totam Rem Aperiam</p>
-        <h6>Sales Start from <span style="color: #e99c2e">＄99.00<span></h6>
-        <button>Discover More</button>
-
-    </div>
-    <div class="hanging-lamp">
-        <img src="img/populer-products/p3.png">
-        <h6> Hanging Lamp</h6>
-        <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut</p>
-
-    </div>
-</div>
 </div>
 
 
@@ -172,100 +174,107 @@
     <div class="new-arrival-txt">
         <h3>New Arrivals</h3>
     </div>
-    <div class="grid products">
 
-        <div class="product-grid wooden-chair-product">
+    <div class="container">
+       <div class="products">
+            <div class="row">
+
+                <div class="product-grid  col-lg-3 col-md-3">
+                    <div>
+                        <div class="image">
+                            <div class="sale-orange">
+                                <button>Sale</button>
             
-            <div class="image">
-                <div class="sale-orange">
-                    <button>Sale</button>
-
-                <img src="img/collection/arrivals1.png">
+                                <img src="img/collection/arrivals1.png">
+                            </div>
+                        </div>
+                        <div>
+                            <h6>Wooden Chair </h6><p>＄65.00</p>
+                        </div>
+                    </div>
                 </div>
-        </div>
-        <div>
-            <h6>Wooden Chair </h6><p>＄65.00</p>
-        </div>
-        </div>
-
-        <div class="product-grid">
-            <div class="image">
-                <div class="sale-green">
-                    <button>Sale</button>
-                    <img src="img/collection/arrivals2.png">
+        
+                <div class="product-grid col-lg-3 col-md-3">
+                    <div class="image">
+                        <div class="sale-green">
+                            <button>Sale</button>
+                            <img src="img/collection/arrivals2.png">
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Single ArmChair </h6><p>＄80.00</p>
+                    </div>
                 </div>
-        </div>
-        <div>
-            <h6>Single ArmChair </h6><p>＄80.00</p>
-        </div>
-        </div>
+        
+                <div class="product-grid col-lg-3 col-md-4">
+                    <div class="image">
+                        <div class="image">
+                        <img src="img/collection/arrivals3.png">
+                        </div>
+                        <div>
+                            <h6>Wooden ArmChair </h6><p>＄40.00</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-grid col-lg-3 col-md-4">
+                    <div class="image">
+                        <div class="sale-orange">
+                            <button>Sale</button>
+                            <img src="img/collection/arrivals4.png">
+                        </div>   
+                    </div>
+                    <div>
+                        <h6>Stylish Chair </h6><p>＄100.00</p>
+                    </div>
+                </div>
 
-        <div class="product-grid">
-            <div class="image">
-                <div class="image">
-                <img src="img/collection/arrivals3.png">
+                <div class="product-grid col-lg-3 col-md-4">
+                    <div class="image">
+                    <img src="img/collection/arrivals5.png">
+                </div>
+                <div>
+                    <h6>Modern Chair </h6><p>＄120.00</p>
+                </div>
+                </div>
+        
+                <div class="product-grid col-lg-3 col-md-4">
+                    <div class="image">
+                        <div class="sale-orange">
+                            <button>Sale</button>
+        
+                    <img src="img/collection/arrivals6.png">
+                        </div>
+                </div>
+                <div>
+                    <h6>Maple Wood Dinning Table </h6><p>＄140.00</p>
+                </div>
+                </div>
+        
+                <div class="product-grid col-lg-3 col-md-4">
+                    <div class="image">
+                        <div class="sale-green">
+                            <button>Sale</button>
+                            <img src="img/collection/arrivals7.png">
+                        </div>
+                </div>
+                <div>
+                    <h6>Arm Chair </h6><p>＄90.00</p>
+                </div>
+                </div>
+        
+                <div class="product-grid col-lg-3 col-md-4">
+                    <div class="image">
+                    <img src="img/collection/arrivals8.png">
+                </div>
+                <div>
+                    <h6>Wooden Bed </h6><p>＄140.00</p>
+                </div>
+                </div>
             </div>
-            <div>
-                <h6>Wooden ArmChair </h6><p>＄40.00</p>
-            </div>
-            </div>
-        </div>
+    
 
-        <div class="product-grid">
-            <div class="image">
-                <div class="sale-orange">
-                    <button>Sale</button>
-                    <img src="img/collection/arrivals4.png">
-                </div>   
-        </div>
-        <div>
-            <h6>Stylish Chair </h6><p>＄100.00</p>
-        </div>
-        </div>
-        <div class="product-grid">
-            <div class="image">
-            <img src="img/collection/arrivals5.png">
-        </div>
-        <div>
-            <h6>Modern Chair </h6><p>＄120.00</p>
-        </div>
-        </div>
-
-        <div class="product-grid">
-            <div class="image">
-                <div class="sale-orange">
-                    <button>Sale</button>
-
-            <img src="img/collection/arrivals6.png">
-                </div>
-        </div>
-        <div>
-            <h6>Maple Wood Dinning Table </h6><p>＄140.00</p>
-        </div>
-        </div>
-
-        <div class="product-grid">
-            <div class="image">
-                <div class="sale-green">
-                    <button>Sale</button>
-                    <img src="img/collection/arrivals7.png">
-                </div>
-        </div>
-        <div>
-            <h6>Arm Chair </h6><p>＄90.00</p>
-        </div>
-        </div>
-
-        <div class="product-grid">
-            <div class="image">
-            <img src="img/collection/arrivals8.png">
-        </div>
-        <div>
-            <h6>Wooden Bed </h6><p>＄140.00</p>
-        </div>
-        </div>
-
-
+        </div>        
     </div>
 </div>
 
@@ -273,19 +282,22 @@
 <!--- Unlimited Sofa collection -->
 <div class="unlimited-sofa-collection">
     <div class="unlimited-sofa-collection-inner">
-        <div class="content">
-            <h2>
-                Unlimited Sofa Collection
-            </h2>
-            <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed-Do Elusmod Tempor
-Incididunt Ut Labore Et Dolore Magna Aliqua, Ut Enim Ad Minim Veniam, Quis
-Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
-            </p>
-            <p>Starting From <span style="color: #d8924c">＄199</span></p>
-            <button class="view-more-btn">View More</button>
-                                
+    <div class="container">
+        <div class="row">
+
+            <div class="content col-lg-6">
+                <h2>
+                    Unlimited Sofa Collection
+                </h2>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed-Do Elusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua, Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
+                </p>
+                <p>Starting From <span style="color: #d8924c">＄199</span></p>
+                <button class="view-more-btn">View More</button>
+                                    
+            </div>
         </div>
+    </div>
     </div>
 </div>
 
@@ -296,9 +308,10 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
     <div class="featured-products-txt">
         <h3>Featured Products</h3>
     </div>
-    <div class="grid featured-products">
+    <div class="container featured-products">
+    <div class="row">
 
-        <div class="featured-grid">
+        <div class="featured-grid col-lg-3  col-md-4 col-sm-6">
             
             <div class="image">
 
@@ -316,7 +329,7 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
         </div>
         </div>
 
-        <div class="featured-grid">
+        <div class="featured-grid col-lg-3 col-md-4 col-sm-6">
             <div class="image">
                <img src="img/features/f2.jpg">
              </div>
@@ -332,7 +345,7 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
         </div>
         </div>
 
-        <div class="featured-grid">
+        <div class="featured-grid col-lg-3 col-md-4 col-sm-6">
             <div class="image">
                 <div class="image">
                 <img src="img/features/f3.jpg">
@@ -351,7 +364,7 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
             </div>
         </div>
 
-        <div class="featured-grid">
+        <div class="featured-grid col-lg-3 col-md-4 col-sm-6">
             <div class="image">
                     <img src="img/features/f4.jpg">
         </div>
@@ -366,6 +379,7 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
             <h6>Stylish Chair </h6><p>＄299.00</p>
         </div>
         </div>
+    </div>
 
 
     </div>
@@ -380,35 +394,36 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
         <h3>Latest Blog</h3>
     </div>
     <div class="grid"> 
-        <div class="blog-grid-item">
-            <img src="img/blog/b1.jpg">
-            <div class="text">
-                <h6>Why Brands are looking at local language</h6>
-                <p style="font-weight: 100; font-size: 12px;">By Robert Norby/ 18 March 2018</p>
-                <p >Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
-            </div>
-        </div>
-    
-        <div>
-            <div class="blog-grid-item">
-                <img src="img/blog/b2.jpg">
-                <div class="text">
-                    <h6>Why Brands are looking at local language</h6>
-                    <p style="font-weight: 100; font-size: 12px;">By Robert Norby/ 18 March 2018</p>
-                    <p >Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
+        <div class="container">
+            <div class="row">
+
+                <div class="blog-grid-item col-lg-4">
+                    <img src="img/blog/b1.jpg">
+                    <div class="text">
+                        <h6>Why Brands are looking at local language</h6>
+                        <p style="font-weight: 100; font-size: 12px;">By Robert Norby/ 18 March 2018</p>
+                        <p >Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
+                    </div>
+                </div>
+            
+                    <div class="blog-grid-item col-lg-4">
+                        <img src="img/blog/b2.jpg">
+                        <div class="text">
+                            <h6>Why Brands are looking at local language</h6>
+                            <p style="font-weight: 100; font-size: 12px;">By Robert Norby/ 18 March 2018</p>
+                            <p >Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
+                        </div>
+                    </div>
+                
+                    <div class="blog-grid-item col-lg-4">
+                        <img src="img/blog/b2.jpg">
+                        <div class="text">
+                            <h6>Why Brands are looking at local language</h6>
+                            <p style="font-weight: 100; font-size: 12px;">By Robert Norby/ 18 March 2018</p>
+                            <p >Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
+                        </div>
                 </div>
             </div>
-        </div>
-    
-        <div>
-            <div class="blog-grid-item">
-                <img src="img/blog/b2.jpg">
-                <div class="text">
-                    <h6>Why Brands are looking at local language</h6>
-                    <p style="font-weight: 100; font-size: 12px;">By Robert Norby/ 18 March 2018</p>
-                    <p >Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt.</p>
-                </div>
-            </div>  
         </div>
     </div>
 
@@ -418,21 +433,25 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
 <!--- Meet the team -->
 
 <div class="partners">
-    <div class="grid">
-        <div class="image-container">
-            <img src="img/clients/c1.png">
-        </div>
-        <div class="image-container">
-            <img src="img/clients/c2.png">
-        </div>
-        <div class="image-container">
-            <img src="img/clients/c3.png">
-        </div>
-        <div class="image-container">
-            <img src="img/clients/c4.png">
-        </div>
-        <div class="image-container">
-            <img src="img/clients/c5.png">
+    <div class="container">
+        <div class="row">
+
+            <div class="image-container col">
+                <img src="img/clients/c1.png">
+            </div>
+            <div class="image-container col">
+                <img src="img/clients/c2.png">
+            </div>
+            <div class="image-container col">
+                <img src="img/clients/c3.png">
+            </div>
+            <div class="image-container col">
+                <img src="img/clients/c4.png">
+            </div>
+            <div class="image-container col">
+                <img src="img/clients/c5.png">
+            </div>
+
         </div>
     </div>
 </div>
@@ -441,46 +460,49 @@ Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
 
 <!--- Footers -->
 <div class="footer">
-    <div class="grid">
-        <div class="column">
-            <h6>Information</h6>
-            <div class="list">
-                <p>About Us</p>
-                <p>Contact Us</p>
-                <p>News</p>
-                <p>Store</p>
+    <div class="container grid">
+        <div class="row">
+
+            <div class="column col-lg-3 col-sm-12">
+                <h6>Information</h6>
+                <div class="list">
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>News</p>
+                    <p>Store</p>
+                </div>
             </div>
-        </div>
-    
-        <div class="column">
-            <h6>Collections</h6>
-            <div class="list">
-                <p>Wooden Chair</p>
-                <p>Royal Cloth Sofa</p>
-                <p>Accent Chair</p>
-                <p>Bed</p>
-                <p>Hanging Lamp</p>
+        
+            <div class="column col-lg-3 col-sm-12">
+                <h6>Collections</h6>
+                <div class="list">
+                    <p>Wooden Chair</p>
+                    <p>Royal Cloth Sofa</p>
+                    <p>Accent Chair</p>
+                    <p>Bed</p>
+                    <p>Hanging Lamp</p>
+                </div>
             </div>
-        </div>
-    
-        <div class="column">
-            <h6>My Accounts</h6>
-            <div class="list">
-                <p>My Account</p>
-                <p>Whishlist</p>
-                <p>Community</p>
-                <p>Order History</p>
-                <p>My Cart</p>
+        
+            <div class="column col-lg-3 col-sm-12">
+                <h6>My Accounts</h6>
+                <div class="list">
+                    <p>My Account</p>
+                    <p>Whishlist</p>
+                    <p>Community</p>
+                    <p>Order History</p>
+                    <p>My Cart</p>
+                </div>
             </div>
-        </div>
-    
-        <div class="column">
-            <h6>Newletter</h6>
-            <div class="list">
-                <p>Subscribe to get latest news, update and information</p>
-                <dix class="input-field">
-                    <input type="email" id="email" name="email" placeholder="   Enter Email Here... ">
-                </dix>
+        
+            <div class="column col-lg-3 col-sm-12">
+                <h6>Newletter</h6>
+                <div class="list">
+                    <p>Subscribe to get latest news, update and information</p>
+                    <dix class="input-field">
+                        <input type="email" id="email" name="email" placeholder="   Enter Email Here... ">
+                    </dix>
+                </div>
             </div>
         </div>
     </div>
