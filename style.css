@@ -155,19 +155,6 @@ img {
     padding: 15px;
 }
 
-@media (max-width: 768px) {
-
-    .popular-products .stool-chair h6 p{
-        float: none;
-    }
-    .popular-products .stool-chair img{
-    float: none;
-}
-
-    
-}
-
-
 .popular-products .stool-chair h6{
     font-weight: bold;
     padding: 15px 0px;
@@ -472,7 +459,23 @@ img {
 }
 
 
+.hm-foot-email {
+    position: relative;
+}
 
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 
 
@@ -567,6 +570,26 @@ Extra (xl) large devices (large desktops, 1200px and up)
     color: #ecad54;
     border-color: #ecad54;
 }
+
+@media (max-width: 600px) {
+    .stool-chair h6{
+        float: none;
+
+    } 
+    .stool-chair {
+        text-align: center;
+
+    } 
+    .stool-chair p{
+        float: none;
+
+    } 
+    .stool-chair button{
+        float: none;
+        
+    }
+}
+
 @media (max-width: 768px) {
     .navbar{
         display: inline-block;
