@@ -782,6 +782,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
 }
 
+@media (min-width: 1350px) {
+    .stool-chair-inner{
+        float: left;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar{
         display: inline-block;
