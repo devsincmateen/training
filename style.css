@@ -26,6 +26,13 @@ img {
     font-weight: bold;
 }
 
+@media (max-width:860px){
+    .nav-item{
+        padding: 5px;
+    }
+    
+}
+
 .navbar-icons .nav-item {
     padding: 5px;
     font-weight: bold;
@@ -220,6 +227,27 @@ img {
     }
 }
 
+@media (max-width: 768px){
+    .popular-products .stool-chair img {
+        float: none;
+        padding: 15px;
+    }
+    .popular-products .stool-chair p {
+        width: 481px;
+    }
+    .popular-products .stool-chair {
+        text-align: center;
+    }
+}
+
+@media (max-width: 660px){
+    
+    .popular-products .stool-chair p {
+        width: auto;
+    }
+}
+
+
 .new-arrivals{
     margin-bottom: 100px;
 }
@@ -381,7 +409,7 @@ img {
 
 .latest-blogs .grid .blog-grid-item .text {
     margin-top: 20px;
-    width: 370px;
+    width: auto;
 }
 
 
@@ -667,7 +695,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (max-width: 992px) {
     .header-container{
-        width: 100%;
+        width: 95%!important;
     }
 
 }
@@ -711,6 +739,43 @@ Extra (xl) large devices (large desktops, 1200px and up)
     padding: 15px;
 }
 
+
+
+@media (max-width: 1030px){
+    .header-container{
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo-container{
+        width: 100px;
+    }
+}
+#scroll-Top .return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #e99c2e;
+    border: 1px solid #e99c2e;
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 2;
+}
+
 @media (max-width: 768px) {
     .navbar{
         display: inline-block;
@@ -736,10 +801,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .navbar-nav{
         flex-direction: row;
     }
-
-    .navbar-nav .navbar-nav-collapse{
+    .navbar-collapse .navbar-nav {
         flex-direction: column;
     }
+    
+    .navbar-icons{
+        flex-direction: row;
+    }
+
     .navbar{
         position: relative;
     }
