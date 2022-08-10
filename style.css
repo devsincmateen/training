@@ -2,6 +2,8 @@
 body{
     background-color: #ffffff;
 }
+
+
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -368,7 +370,7 @@ img {
 }
 
 
-.latest-blogs .grid .text {
+.latest-blogs .grid  {
     text-align: left;
 }
 
@@ -379,6 +381,7 @@ img {
 
 .latest-blogs .grid .blog-grid-item .text {
     margin-top: 20px;
+    width: 370px;
 }
 
 
@@ -664,13 +667,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (max-width: 992px) {
     .header-container{
-        width: 100%!important
+        width: 100%;
     }
 
 }
 @media (max-width: 1187px) {
     .header-container{
         width: 80%
+    }
+
+}
+@media (max-width: 786px) {
+    .header-container{
+        width: 88%
     }
 
 }
@@ -696,6 +705,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
         float: none;
         
     }
+}
+
+.nav-item-icon{
+    padding: 15px;
 }
 
 @media (max-width: 768px) {
@@ -731,7 +744,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         position: relative;
     }
     .nav-item-icon{
-        padding: 15px;
+        padding: 8px;
     }
     
     .carousel-inner {
