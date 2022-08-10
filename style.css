@@ -776,6 +776,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
     z-index: 2;
 }
 
+@media (min-width: 1560px) {
+    .latest-blogs .grid .blog-grid-item .text p {
+        width: 370px;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar{
         display: inline-block;
